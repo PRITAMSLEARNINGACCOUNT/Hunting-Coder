@@ -1,0 +1,56 @@
+.mainDiv {
+  background-color: #7167672f;
+  min-height: 75vh;
+  margin: 3vw 5vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 1vw 0.5vw #7869698a;
+  padding: 2vw;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.BlogCard {
+  height: 35vh;
+  background-color: #7167672f;
+  max-width: 32%;
+  padding: 1vw;
+  padding-bottom: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.BlogCard > h2 {
+  text-align: center;
+  /* & > h3 {
+    text-align: center;
+  }  --> Syntax Is Not Working In Plain CSS But Will Definately Work In CSS Preprocessors Like SCSS or LESS*/
+}
+.BlogCard h3 {
+  padding: 0.3vh;
+  text-align: center;
+}
+.BlogCard p {
+  padding: 1rem;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: large;
+  overflow: hidden;
+  text-wrap: wrap;
+}
+.BlogCard button {
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 2vw;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .BlogCard {
+    max-width: 100%;
+  }
+}

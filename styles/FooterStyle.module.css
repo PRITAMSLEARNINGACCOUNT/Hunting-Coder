@@ -1,0 +1,38 @@
+.MainFooter .Add {
+  font-size: 1.5rem;
+  color: #fff;
+  position: fixed;
+  top: 91vh;
+  left: 40%;
+  right: 50vw;
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #191911a4;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MainFooter .Image {
+  display: none;
+}
+.MainFooter .Add:hover {
+  background-color: rgb(48, 46, 46);
+  box-shadow: 0 0 10px 0 rgb(124, 122, 122);
+}
+@media screen and (max-width: 768px) {
+  .MainFooter .Add {
+    display: none;
+  }
+  .MainFooter .Image {
+    font-size: 5rem;
+    display: inline;
+    top: 85vh;
+    left: 50%;
+    right: 40vw;
+    width: 100%;
+    cursor: pointer;
+  }
+}
